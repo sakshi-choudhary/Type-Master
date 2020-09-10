@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Type Master</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1>
+        Type Master
+
+      </h1>
+
+      <br />
+
+      <div class="timer">
+        <div class="curr_time" style="text-align: center; font-size: 2.2em">
+          60s
+        </div>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="texttotype"></div>
+      <button id="startbtn" onclick="startgame()">Start</button>
+
+      <textarea class="inputfield" placeholder="Type it here ..." oninput="runtext_rn()"
+        style="margin-top: 4%;"></textarea>
+      <button class="playagain_btn" onclick="resetdata()">Play Again</button>
+
+      <footer>
+        Made with &#9749; by
+        <a href="http://www.sakshichoudhary.me">Sakshi Choudhary</a>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
