@@ -151,4 +151,5 @@ function resetdata() {
   inputfield.value = "";
   timertext.textContent = timeLeft + "s";
   playagain_btn.style.display = "none";
+  startbtn.style.display="block";
 }
