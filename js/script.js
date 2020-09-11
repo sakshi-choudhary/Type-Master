@@ -20,6 +20,8 @@ let texttotype_text = document.querySelector(".texttotype");
 let inputfield = document.querySelector(".inputfield");
 let playagain_btn = document.querySelector(".playagain_btn");
 let startbtn = document.getElementById("startbtn");
+let resumebtn = document.getElementById("resumebtn");
+let stopbtn = document.getElementById("stopbtn");
 
 let timeLeft = 60;
 let timepassed = 0;
@@ -111,7 +113,7 @@ function updateTimer() {
 }
 
 ////////////////////////////////////////////////////////////////////
-//         This is the function to start the game                //
+//         This is the function to end the game                  //
 //////////////////////////////////////////////////////////////////
 
 function gameend() {
@@ -119,7 +121,7 @@ function gameend() {
   clearInterval(timer);
 
   inputfield.disabled = true;
-
+stopbtn.style.display="none"
   // to display restart button after game ends
   playagain_btn.style.display = "block";
 }
@@ -131,10 +133,39 @@ function gameend() {
 function startgame() {
   resetdata();
   updatetexttotype();
+  stopbtn.style.display = "block";
+
   // to hide start btn when the game is going on
   startbtn.style.display = "none";
   // clear old and start a new timer
   clearInterval(timer);
+  timer = setInterval(updateTimer, 1000);
+}
+
+////////////////////////////////////////////////////////////////////
+//           This is the function to stop the game               //
+//////////////////////////////////////////////////////////////////
+
+function stopgame() {
+  // stop the timer
+  clearInterval(timer);
+
+  inputfield.disabled = true;
+  resumebtn.style.display = "block";
+  // to display restart button after game ends
+  playagain_btn.style.display = "block";
+}
+
+////////////////////////////////////////////////////////
+// this the func to resume game after user stops it  //
+//////////////////////////////////////////////////////
+
+function resumegame() {
+  updatetexttotype();
+  // to hide start btn when the game is going on
+  resumebtn.style.display = "none";
+  // clear old and start a new timer
+
   timer = setInterval(updateTimer, 1000);
 }
 
@@ -151,5 +182,7 @@ function resetdata() {
   inputfield.value = "";
   timertext.textContent = timeLeft + "s";
   playagain_btn.style.display = "none";
-  startbtn.style.display="block";
+  startbtn.style.display = "block";
+  stopbtn.style.display = "none";
+  resumebtn.style.display = "none";
 }

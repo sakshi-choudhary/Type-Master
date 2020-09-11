@@ -88,3 +88,9 @@ footer {
   position: fixed;
   bottom: 5%;
 }
+#resumebtn{
+  display: none;
+}
+#stopbtn{
+  display: none;
+}

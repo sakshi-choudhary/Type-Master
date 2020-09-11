@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Type Master</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <div class="container">
     <div class="heading">
@@ -13,7 +15,8 @@
         Type Master
 
       </h1>
-     
+
+
       <div class="timer">
         <div class="curr_time" style="text-align: center; font-size: 2.2em">
           60s
@@ -24,7 +27,8 @@
     <div class="header">
       <div class="texttotype"></div>
       <button id="startbtn" onclick="startgame()">Start</button>
-
+      <button onclick="stopgame()" id="stopbtn">stop practise</button>
+      <button onclick="resumegame()" id="resumebtn">resume</button>
       <textarea class="inputfield" placeholder="Type it here ..." oninput="runtext_rn()"
         style="margin-top: 4%;"></textarea>
       <button class="playagain_btn" onclick="resetdata()">Play again</button>
