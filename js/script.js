@@ -19,6 +19,7 @@ let timertext = document.querySelector(".curr_time");
 let texttotype_text = document.querySelector(".texttotype");
 let inputfield = document.querySelector(".inputfield");
 let playagain_btn = document.querySelector(".playagain_btn");
+let startbtn = document.getElementById("startbtn");
 
 let timeLeft = 60;
 let timepassed = 0;
@@ -130,7 +131,8 @@ function gameend() {
 function startgame() {
   resetdata();
   updatetexttotype();
-
+  // to hide start btn when the game is going on
+  startbtn.style.display = "none";
   // clear old and start a new timer
   clearInterval(timer);
   timer = setInterval(updateTimer, 1000);
