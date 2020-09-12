@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Master</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Type Master</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Type Master</h1>
 
-<body>
-  <div class="container">
-    <div class="heading">
-      <h1>
-        Type Master
-
-      </h1>
-
-
-      <div class="timer">
-        <div class="curr_time" style="text-align: center; font-size: 2.2em">
-          45s
+        <div class="timer">
+          <div class="curr_time" style="text-align: center; font-size: 2.2em">
+            45s
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="header">
-           <div class="errors">
+      <div class="header">
+        <div class="errors">
           <div class="header_text">Errors</div>
           <div class="errors_rn">0</div>
         </div>
-
 
         <div class="accuracy">
           <div class="header_text">Accuracy</div>
@@ -40,8 +34,12 @@
       <button id="startbtn" onclick="startgame()">Start</button>
       <button onclick="stopgame()" id="stopbtn">stop practise</button>
       <button onclick="resumegame()" id="resumebtn">resume</button>
-      <textarea class="inputfield" placeholder="Type it here ..." oninput="runtext_rn()"
-        style="margin-top: 4%;"></textarea>
+      <textarea
+        class="inputfield"
+        placeholder="Type it here ..."
+        oninput="runtext_rn()"
+        style="margin-top: 4%"
+      ></textarea>
       <button class="playagain_btn" onclick="resetdata()">Play again</button>
 
       <footer>
@@ -51,6 +49,5 @@
     </div>
 
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>

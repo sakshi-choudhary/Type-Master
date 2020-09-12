@@ -15,7 +15,8 @@
   display: flex;
   align-items: center;
 }
-.errors, .accuracy{
+.errors,
+.accuracy {
   display: none;
 }
 a {
@@ -77,7 +78,7 @@ a {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
 }
-#startbtn{
+#startbtn {
   font-size: 1.5rem;
   padding: 10px;
   border: 0px;
@@ -90,9 +91,9 @@ footer {
   position: fixed;
   bottom: 5%;
 }
-#resumebtn{
+#resumebtn {
   display: none;
 }
-#stopbtn{
+#stopbtn {
   display: none;
 }

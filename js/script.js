@@ -9,7 +9,6 @@ let text_to_type = [
   "Indescribable oppression, which seemed to generate in some unfamiliar part of her consciousness, filled her whole being with a vague anguish. It was like a shadow, like a mist passing across her soul's summer day. It was strange and unfamiliar; it was a mood. She did not sit there inwardly upbraiding her husband, lamenting at Fate, which had directed her footsteps to the path which they had taken. She was just having a good cry all to herself. The mosquitoes made merry over her, biting her firm, round arms and nipping at her bare insteps.",
   "He knew what he was supposed to do. That had been apparent from the beginning. That was what made the choice so difficult. What he was supposed to do and what he would do were not the same. This would have been fine if he were willing to face the inevitable consequences, but he wasn't.",
   "It's always good to bring a slower friend with you on a hike. If you happen to come across bears, the whole group doesn't have to worry. Only the slowest in the group do. That was the lesson they were about to learn that day.",
-  
 ];
 
 ////// lots of defining  //////////
@@ -139,15 +138,15 @@ function gameend() {
   // to display restart button after game ends
   playagain_btn.style.display = "block";
   // display the number of errors at last
-  errortext.textContent = total_errors+errors;
+  errortext.textContent = total_errors + errors;
 
   // update accuracy text
   let correctletters = letterTyped - (total_errors + errors);
   let accuracyVal = (correctletters / letterTyped) * 100;
   accuracytext.textContent = `${Math.round(accuracyVal)}%`;
 
-  accuracygp.style.display="block"
-  errorgp.style.display="block"
+  accuracygp.style.display = "block";
+  errorgp.style.display = "block";
 }
 
 ////////////////////////////////////////////////////////////////////
@@ -185,7 +184,6 @@ function stopgame() {
 //////////////////////////////////////////////////////
 
 function resumegame() {
-  
   // to hide start btn when the game is going on
   resumebtn.style.display = "none";
   // clear old and start a new timer
