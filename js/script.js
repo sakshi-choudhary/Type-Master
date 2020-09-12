@@ -1,12 +1,12 @@
 let text_to_type = [
-  `It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago. I'd love to get together and tell you about it if you're up for a cup of coffee," he continued, laying the trapped he's been planning for years.`,
-  `She looked at her student wondering if she could ever get through. "You need to learn to think for yourself," she wanted to tell him. "Your friends are holding you back and bringing you down." But she didn't because she knew his friends were all that he had and even if that meant a life of misery, he would never give them up.`,
-  "I recollect that my first exploit in squirrel-shooting was in a grove of tall walnut-trees that shades one side of the valley. I had wandered into it at noontime, when all nature is peculiarly quiet, and was startled by the roar of my own gun, as it broke the Sabbath stillness around and was prolonged and reverberated by the angry echoes.",
+`In this world, everything is governed by balance. There is what you stand to gain and what you stand to lose. And when you think you have got nothing to lose, you become overconfident.`,
+  `You know what else is scary? Walking home alone at night. But us women keep doing it. Take fear by the hand and keep living. Because you have to live, gentlemen! You have to live until the end!`,
+  `First times are special. Unique. But the last times are beyond comparison. They are priceless. But people don’t know it’s their last time.`,
+  " When someone is in love, they look through rose-tinted glasses. Everything’s wonderful. They transform into a soft teddy bear that’s smiling all the time.",
   "If you can imagine a furry humanoid seven feet tall, with the face of an intelligent gorilla and the braincase of a man, you'll have a rough idea of what they looked like -- except for their teeth. The canines would have fitted better in the face of a tiger, and showed at the corners of their wide, thin-lipped mouths, giving them an expression of ferocity.",
   "The cab arrived late. The inside was in as bad of shape as the outside which was concerning, and it didn't appear that it had been cleaned in months. The green tree air-freshener hanging from the rearview mirror was either exhausted of its scent or not strong enough to overcome the other odors emitting from the cab. The correct decision, in this case, was to get the hell out of it and to call another cab, but she was late and didn't have a choice.",
   "What was beyond the bend in the stream was unknown. Both were curious, but only one was brave enough to want to explore. That was the problem. There was always one that let fear rule her life.",
-  " You can decide what you want to do in life, but I suggest doing something that creates. Something that leaves a tangible thing once you're done. That way even after you're gone, you will still live on in the things you created.",
-  "Indescribable oppression, which seemed to generate in some unfamiliar part of her consciousness, filled her whole being with a vague anguish. It was like a shadow, like a mist passing across her soul's summer day. It was strange and unfamiliar; it was a mood. She did not sit there inwardly upbraiding her husband, lamenting at Fate, which had directed her footsteps to the path which they had taken. She was just having a good cry all to herself. The mosquitoes made merry over her, biting her firm, round arms and nipping at her bare insteps.",
+  "You can decide what you want to do in life, but I suggest doing something that creates. Something that leaves a tangible thing once you're done. That way even after you're gone, you will still live on in the things you created.",
   "He knew what he was supposed to do. That had been apparent from the beginning. That was what made the choice so difficult. What he was supposed to do and what he would do were not the same. This would have been fine if he were willing to face the inevitable consequences, but he wasn't.",
   "It's always good to bring a slower friend with you on a hike. If you happen to come across bears, the whole group doesn't have to worry. Only the slowest in the group do. That was the lesson they were about to learn that day.",
 ];
@@ -25,7 +25,7 @@ let accuracygp = document.querySelector(".accuracy");
 let accuracytext = document.querySelector(".accuracy_rn");
 let errortext = document.querySelector(".errors_rn");
 
-let timeLeft = 45;
+let timeLeft = 60;
 let timepassed = 0;
 let letterTyped = 0;
 let current_texttotype = "";
@@ -196,8 +196,7 @@ function resumegame() {
 //////////////////////////////////////////////////////////////////
 
 function resetdata() {
-  updatetexttotype();
-  timeLeft = 45;
+  timeLeft = 60;
   timepassed = 0;
   letterTyped = 0;
   texttotypeNo = 0;
@@ -213,4 +212,6 @@ function resetdata() {
   accuracy = 0;
   accuracytext.textContent = 100;
   errortext.textContent = 0;
+  accuracygp.style.display = "none";
+  errorgp.style.display = "none";
 }

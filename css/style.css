@@ -1,4 +1,12 @@
-.container {
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  color: #fa5c44;
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.container1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,10 +15,14 @@
 
 .heading {
   margin-bottom: 2px;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: black;
 }
-
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
 .header {
   display: flex;
   align-items: center;
@@ -18,9 +30,25 @@
 .errors,
 .accuracy {
   display: none;
+  background-color: #fd644c;
+  height: 60px;
+  width: 70px;
+  margin: 8px;
+  text-align: center;
+  padding: 42px;
+  border-radius: 100%;
+  color: #000000;
+  box-shadow: #ff9c8d 5px 3px 5px;
 }
+.curr_time,
+.errors_rn,
+.accuracy_rn {
+  font-size: 2.75rem;
+}
+
 a {
   text-decoration: none;
+  color: #fd644c;
 }
 
 .header_text {
@@ -46,10 +74,11 @@ a {
 }
 
 .inputfield {
+  background-color: #000;
   height: 160px;
   width: 95%;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 4%;
   margin-bottom: 2%;
   margin-right: 4%;
@@ -57,6 +86,9 @@ a {
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
+  border: 0px;
+  box-shadow: #fd644c 5px 6px 5px;
+  color: #fff;
 }
 
 .incorrect_letter {
@@ -77,6 +109,27 @@ a {
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
+  box-shadow: black 5px 8px 5px;
+  background-color: #fd644c;
+  margin-right: 5%;
+  padding-right: 6%;
+  padding-left: 6%;
+  margin-top: 4%;
+}
+.playagain_btn:hover {
+  background-color: #000;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  color: #fd644c;
+  box-shadow: #fd644c 5px 4px 5px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin-right: 5%;
+  padding-right: 6%;
+  padding-left: 6%;
+  margin-top: 4%;
 }
 #startbtn {
   font-size: 1.5rem;
@@ -85,11 +138,63 @@ a {
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
+  box-shadow: black 5px 8px 5px;
+  background-color: #fd644c;
+  padding-right: 6%;
+  padding-left: 6%;
+}
+#resumebtn,
+#stopbtn {
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  box-shadow: black 5px 8px 5px;
+  background-color: #fd644c;
+  margin-right: 5%;
+  padding-right: 6%;
+  padding-left: 6%;
+  margin-top: 4%;
+}
+#startbtn:hover {
+  background-color: #000;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  color: #fd644c;
+  box-shadow: #fd644c 5px 4px 5px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  transform: scale(1.05);
+  padding-right: 6%;
+  padding-left: 6%;
+}
+#stopbtn:hover,
+#resumebtn:hover {
+  background-color: #000;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  color: #fd644c;
+  box-shadow: #fd644c 5px 4px 5px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin-right: 5%;
+  padding-right: 6%;
+  padding-left: 6%;
+  margin-top: 4%;
+  transform: scale(1.05);
 }
 
 footer {
   position: fixed;
-  bottom: 5%;
+  bottom: 1%;
+  font-size: x-large;
+  font-family: "Nanum Pen Script", cursive;
 }
 #resumebtn {
   display: none;
