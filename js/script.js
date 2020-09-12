@@ -1,5 +1,5 @@
 let text_to_type = [
-`In this world, everything is governed by balance. There is what you stand to gain and what you stand to lose. And when you think you have got nothing to lose, you become overconfident.`,
+  `In this world, everything is governed by balance. There is what you stand to gain and what you stand to lose. And when you think you have got nothing to lose, you become overconfident.`,
   `You know what else is scary? Walking home alone at night. But us women keep doing it. Take fear by the hand and keep living. Because you have to live, gentlemen! You have to live until the end!`,
   `First times are special. Unique. But the last times are beyond comparison. They are priceless. But people don’t know it’s their last time.`,
   " When someone is in love, they look through rose-tinted glasses. Everything’s wonderful. They transform into a soft teddy bear that’s smiling all the time.",
@@ -177,6 +177,8 @@ function stopgame() {
   resumebtn.style.display = "block";
   // to display restart button after game ends
   playagain_btn.style.display = "block";
+  //hide stop btn
+  stopbtn.style.display = "none";
 }
 
 ////////////////////////////////////////////////////////
@@ -189,6 +191,8 @@ function resumegame() {
   // clear old and start a new timer
   inputfield.disabled = false;
   timer = setInterval(updateTimer, 1000);
+  //show stop btn
+  stopbtn.style.display = "block";
 }
 
 ////////////////////////////////////////////////////////////////////

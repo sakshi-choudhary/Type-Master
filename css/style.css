@@ -51,7 +51,7 @@ a {
   color: #fd644c;
 }
 
-.header_text {
+.head {
   font-size: 0.8rem;
   font-weight: 600;
 }
@@ -109,7 +109,7 @@ a {
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
-  box-shadow: black 5px 8px 5px;
+  box-shadow: rgba(0, 0, 0, 0.548) 5px 8px 5px;
   background-color: #fd644c;
   margin-right: 5%;
   padding-right: 6%;
@@ -138,7 +138,7 @@ a {
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
-  box-shadow: black 5px 8px 5px;
+  box-shadow: rgba(0, 0, 0, 0.548) 5px 8px 5px;
   background-color: #fd644c;
   padding-right: 6%;
   padding-left: 6%;
@@ -151,7 +151,7 @@ a {
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
-  box-shadow: black 5px 8px 5px;
+  box-shadow: rgba(0, 0, 0, 0.52) 5px 8px 5px;
   background-color: #fd644c;
   margin-right: 5%;
   padding-right: 6%;
