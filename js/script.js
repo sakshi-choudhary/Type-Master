@@ -145,6 +145,9 @@ function gameend() {
   let correctletters = letterTyped - (total_errors + errors);
   let accuracyVal = (correctletters / letterTyped) * 100;
   accuracytext.textContent = `${Math.round(accuracyVal)}%`;
+
+  accuracygp.style.display="block"
+  errorgp.style.display="block"
 }
 
 ////////////////////////////////////////////////////////////////////

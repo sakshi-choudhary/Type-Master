@@ -15,7 +15,9 @@
   display: flex;
   align-items: center;
 }
-
+.errors, .accuracy{
+  display: none;
+}
 a {
   text-decoration: none;
 }
