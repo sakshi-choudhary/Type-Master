@@ -7,7 +7,7 @@
 
 ## Preview
 
-![](assets/preview.png)
+![](assets/images/preview.png)
 
 ---
 
