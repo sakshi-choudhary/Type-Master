@@ -14,7 +14,7 @@
 ## Instructions to run
 
 - Clone it on your local machine and run index.html
-- Or LIVE AT : <a href=" ">CLICK HERE</a>
+- Or LIVE AT : <a href="http://www.sakshichoudhary.me/Type-Master/">CLICK HERE</a>
 
 ---
 
