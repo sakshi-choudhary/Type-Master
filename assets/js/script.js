@@ -24,6 +24,7 @@ let errorgp = document.querySelector(".errors");
 let accuracygp = document.querySelector(".accuracy");
 let accuracytext = document.querySelector(".accuracy_rn");
 let errortext = document.querySelector(".errors_rn");
+let finishbtn = document.getElementById("finishbtn");
 
 let timeLeft = 60;
 let timepassed = 0;
@@ -40,7 +41,7 @@ let accuracy = 0;
 ///////////////////////////////////////////////////////////////////
 
 function updatetexttotype() {
-  timeLeft=60;
+  timeLeft = 60;
   texttotype_text.textContent = null;
   current_texttotype = text_to_type[texttotypeNo];
 
@@ -136,6 +137,7 @@ function gameend() {
 
   inputfield.disabled = true;
   stopbtn.style.display = "none";
+  finishbtn.style.display = "none";
   // to display restart button after game ends
   playagain_btn.style.display = "block";
   // display the number of errors at last
@@ -158,7 +160,8 @@ function startgame() {
   resetdata();
   updatetexttotype();
   stopbtn.style.display = "block";
-
+  finishbtn.style.display = "block";
+  playagain_btn.style.display = "block";
   // to hide start btn when the game is going on
   startbtn.style.display = "none";
   // clear old and start a new timer
@@ -194,6 +197,7 @@ function resumegame() {
   timer = setInterval(updateTimer, 1000);
   //show stop btn
   stopbtn.style.display = "block";
+  finishbtn.style.display = "block";
 }
 
 ////////////////////////////////////////////////////////////////////
@@ -211,6 +215,7 @@ function resetdata() {
   playagain_btn.style.display = "none";
   startbtn.style.display = "block";
   stopbtn.style.display = "none";
+  finishbtn.style.display = "none";
   resumebtn.style.display = "none";
   errors = 0;
   total_errors = 0;
