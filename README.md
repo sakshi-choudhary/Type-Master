@@ -20,8 +20,8 @@
 
 ## Functionalities
 
-- [x] Users can see the time interval words must be typed in displayed in the app window
-- [x] Users can click on the 'Stop Practice' button to stop the practice session
+- [x] User can see the time interval words must be typed in displayed in the app window
+- [x] User can click on the 'Stop Practice' button to stop the practice session
 - [x] User is prompted if an incorrect letter is entered
 - [x] User can Resume after he stops
 - [x] User can click on the 'play again' button during a game or after it finishes
