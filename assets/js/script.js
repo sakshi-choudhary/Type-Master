@@ -40,6 +40,7 @@ let accuracy = 0;
 ///////////////////////////////////////////////////////////////////
 
 function updatetexttotype() {
+  timeLeft=60;
   texttotype_text.textContent = null;
   current_texttotype = text_to_type[texttotypeNo];
 

@@ -1,84 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Type Master</title>
 
-    <!-- google fonts cdn -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Type Master</title>
 
-    <!-- favicon -->
+  <!-- google fonts cdn -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+  <!-- favicon -->
 
-    <!-- main css file -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
 
-  <body>
-    <div class="container1">
-      <div class="heading">
-        <h1>Type Master</h1>
+  <!-- main css file -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-        <div class="timer">
-          <div class="curr_time" style="text-align: center; font-size: 2.2em">
-            60s
-          </div>
+<body>
+  <div class="container1">
+    <div class="heading">
+      <h1>Type Master</h1>
+
+      <div class="timer">
+        <div class="curr_time" style="text-align: center; font-size: 2.2em">
+          60s
         </div>
       </div>
-
-      <div class="header">
-        <div class="errors">
-          <div class="head">Errors</div>
-          <div class="errors_rn">0</div>
-        </div>
-
-        <div class="accuracy">
-          <div class="head">Accuracy</div>
-          <div class="accuracy_rn">100</div>
-        </div>
-      </div>
-      <div class="texttotype"></div>
-      <button id="startbtn" onclick="startgame()">Start</button>
-
-      <textarea
-        class="inputfield"
-        placeholder="Type it here ..."
-        oninput="runtext_rn()"
-        style="margin-top: 4%"
-      ></textarea>
-      <div class="flex">
-        <button onclick="stopgame()" id="stopbtn">stop practise</button>
-        <button onclick="resumegame()" id="resumebtn">resume</button>
-        <button class="playagain_btn" onclick="resetdata()">Play again</button>
-      </div>
-      <footer>
-        Made with &#9749; by
-        <a href="http://www.sakshichoudhary.me">Sakshi Choudhary</a>
-      </footer>
     </div>
 
-    <script src="assets/js/script.js"></script>
-  </body>
+    <div class="header">
+      <div class="errors">
+        <div class="head">Errors</div>
+        <div class="errors_rn">0</div>
+      </div>
+
+      <div class="accuracy">
+        <div class="head">Accuracy</div>
+        <div class="accuracy_rn">100</div>
+      </div>
+    </div>
+    <div class="texttotype"></div>
+    <button id="startbtn" onclick="startgame()">Start</button>
+
+    <textarea class="inputfield" placeholder="Type it here ..." oninput="runtext_rn()"
+      style="margin-top: 4%"></textarea>
+    <div class="flex">
+      <button onclick="stopgame()" id="stopbtn">stop practise</button>
+      <button onclick="resumegame()" id="resumebtn">resume</button>
+      <button class="playagain_btn" onclick="resetdata()">Play again</button>
+    </div>
+    <footer>
+      Made with &#9749; by
+      <a href="http://www.sakshichoudhary.me">Sakshi Choudhary</a>
+    </footer>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
