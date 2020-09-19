@@ -1,5 +1,5 @@
 <h2 align="center">Type Master</h2>
-	<h4 align="center"> It’s a showdown for fastest finger first! Type master is an application where user can type the given text in a limited amount of time and at last can check their no. of errors and accuracy %.<h4>
+	<h4 align="center">Type master is an application where user can type the given text in a limited amount of time and at last can check their no. of errors and accuracy %.<h4>
 </p>
 
 ---
