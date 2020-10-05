@@ -1,16 +1,16 @@
 <h2 align="center">Type Master</h2>
 	<h4 align="center">Type master is an application where user can type the given text in a limited amount of time and at last can check their no. of errors and accuracy %.<h4>
 </p>
-
----
-
-
+	
+ ---
 
 
-<!-- [](assets/images/preview.png)
-<hr> -->
 
-<!-- ![](assets/images/preview2.png) -->
+
+ ![](assets/images/preview.png)
+<hr> 
+
+![](assets/images/preview2.png)
 ---
 
 ## Instructions to run
