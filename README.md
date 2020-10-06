@@ -11,7 +11,7 @@
 <hr> -->
 
 <!-- ![](assets/images/preview2.png)
---- ->
+ -->
 
 ## Instructions to run
 
