@@ -7,11 +7,11 @@
 
 
 
- ![](assets/images/preview.png)
-<hr> 
+ <!-- ![](assets/images/preview.png)
+<hr> -->
 
-![](assets/images/preview2.png)
----
+<!-- ![](assets/images/preview2.png)
+--- ->
 
 ## Instructions to run
 
